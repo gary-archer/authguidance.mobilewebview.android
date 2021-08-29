@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Our main theme uses Material blue colours -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/text_value</item>
+        <item name="android:textColor">@color/text_label</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+    </style>
+
+    <!-- The style for the app's main title text -->
+    <style name="TextViewTitleStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <!-- Button style for the menu buttons -->
+    <style name="MenuButtonStyle" parent="android:Widget.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:backgroundTint">@color/primary</item>
+    </style>
+
+    <!-- The webview popup dialog style -->
+    <style name="Theme.App.Dialog.FullScreen" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- The style for error summary text -->
+    <style name="TextViewErrorSummaryStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/text_error</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- The style for headings -->
+    <style name="TextViewHeaderStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/text_value</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- The style for label text -->
+    <style name="TextViewLabelStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/text_label</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <!-- The style for value text -->
+    <style name="TextViewValueStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/text_value</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+</resources>

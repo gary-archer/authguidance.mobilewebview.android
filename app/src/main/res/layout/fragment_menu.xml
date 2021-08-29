@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <!-- Makes model a property of this type on the fragment's binding object -->
+        <variable name="model"
+            type="com.authguidance.mobileweb.views.menu.MenuViewModel" />
+    </data>
+    <TableLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".views.menu.MenuFragment">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="25dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login"
+                android:text="@string/login_button"
+                android:onClick="@{() -> model.onInvokeLogin()}"
+                android:enabled="@{!model.isLoggedIn}"
+                style="@style/MenuButtonStyle"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="25dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_systemBrowser"
+                android:text="@string/system_browser_button"
+                android:onClick="@{() -> model.onInvokeSystemBrowser()}"
+                android:enabled="@{model.isLoggedIn}"
+                style="@style/MenuButtonStyle"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="25dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_customTab"
+                android:text="@string/custom_tab_button"
+                android:onClick="@{() -> model.onInvokeInAppBrowser()}"
+                android:enabled="@{model.isLoggedIn}"
+                style="@style/MenuButtonStyle"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="25dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_webView"
+                android:text="@string/webview_button"
+                android:onClick="@{() -> model.onInvokeWebView()}"
+                android:enabled="@{model.isLoggedIn}"
+                style="@style/MenuButtonStyle"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="25dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_logout"
+                android:text="@string/logout_button"
+                android:onClick="@{() -> model.onInvokeLogout()}"
+                android:enabled="@{model.isLoggedIn}"
+                style="@style/MenuButtonStyle"/>
+        </TableRow>
+    </TableLayout>
+</layout>

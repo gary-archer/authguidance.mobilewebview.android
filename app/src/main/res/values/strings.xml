@@ -1,0 +1,20 @@
+<resources>
+    <string name="launch_icon_name">Demo</string>
+    <string name="app_title"><u>Mobile Web Integration</u></string>
+
+    <string name="login_button">1. Sign In to Mobile App</string>
+    <string name="system_browser_button">2. Run SPA in System Browser</string>
+    <string name="custom_tab_button">3. Run SPA via In App Browser</string>
+    <string name="webview_button">4. Run SPA in Web View</string>
+    <string name="logout_button">5. Sign Out from Mobile App</string>
+
+    <string name="main_error_hyperlink">Application Problem Encountered</string>
+    <string name="main_error_dialogtitle">Application Error</string>
+    <string name="error_user_action">User Action</string>
+    <string name="error_info">Info</string>
+    <string name="error_area">Area</string>
+    <string name="error_code">Error Code</string>
+    <string name="error_utc_time">UTC Time</string>
+    <string name="error_details">Details</string>
+    <string name="error_stack">Stack</string>
+</resources>
